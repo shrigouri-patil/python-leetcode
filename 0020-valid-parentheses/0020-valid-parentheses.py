@@ -11,11 +11,11 @@ class Solution:
                 if last !="(":
                     return False
             elif i=="}":
-                if d==[]:
+                if d==[] or d.pop() != "{":
                     return False
-                last=d.pop()
-                if last !="{":
-                    return False
+                # last=d.pop()
+                # if last !="{":
+                #     return False
             elif i=="]":
                 if d==[]:
                     return False
